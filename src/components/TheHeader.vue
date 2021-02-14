@@ -7,8 +7,8 @@
         <h1 class="header__title">Do you love your skin? </h1>
         <span class="header__subtitle">PM loves your skin!</span>
         <div class="header__box">
-            <the-button class="header__btn">Order now </the-button>
-            <a href="/" class="header__link">Dermatologist consultation</a>
+            <the-button class="header__btn">Order now</the-button>
+            <the-link>Dermatologist consultation</the-link>
         </div>
     </div>
   </div>
@@ -16,9 +16,10 @@
 
 <script>
 import TheButton from './common/TheButton.vue';
+import TheLink from './common/TheLink.vue';
 export default {
     name: 'The-header',
-    components: { TheButton },
+    components: { TheButton, TheLink },
 };
 </script>
 
@@ -31,11 +32,10 @@ export default {
   background-repeat:  no-repeat;
   background-color: $pink-color;
   width: 100%;
+  padding-top: 54px;
+  margin-bottom: 305px;
   &__logo{
-      position: absolute;
-      top: 57px;
-      left: 50%;
-      transform: translateX(-50%);
+      margin-bottom: 80px;
   }
   &__title{
       @include text($H1200, 900, $dark-color){
@@ -46,6 +46,7 @@ export default {
           text-transform: capitalize;
       };
       margin-bottom: 12px;
+      transform: translateX(-30%);
   }
   &__subtitle{
       @include text($H240, 900, $dark-color){
@@ -55,6 +56,9 @@ export default {
       };
       display: block;
       margin-bottom: 200px;
+  }
+  &__box{
+    transform: translateX(-30%);
   }
   &__btn{
     margin-right: 50px;

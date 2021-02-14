@@ -12,7 +12,6 @@ export default {
 
 <style lang="scss">
     .btn{
-        background-image: url('../../assets/Union (1).png');
         @include text($H240, normal, $pink-color){
             line-height: 28px;
             text-align: center;
@@ -22,5 +21,8 @@ export default {
         outline: none;
         border: none;
         cursor: pointer;
+        position: relative;
+        padding: 13px 32px;
+        background-color: $dark-color;
     }
 </style>
