@@ -34,6 +34,11 @@ export default {
   width: 100%;
   padding-top: 54px;
   margin-bottom: 305px;
+  &::after{
+        content: url('../assets/IMG_0168-removebg-preview.png');
+        position: absolute;
+        right: 0;
+      }
   &__logo{
       margin-bottom: 80px;
   }
