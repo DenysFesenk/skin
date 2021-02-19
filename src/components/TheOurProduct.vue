@@ -52,7 +52,7 @@ export default {
     content: url("../assets/IMG_0182-removebg-preview.png");
     position: absolute;
     top: -306px;
-    left: 864px;
+    right: 8%;
   }
   &__title {
     margin-bottom: 75px;

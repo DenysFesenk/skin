@@ -19,6 +19,10 @@ export default {
     @include text($H80, 500, $dark-link) {
       line-height: 21px;
       letter-spacing: 0.5px;
+      @include transition;
+    }
+    &:hover{
+        color: $dark-color;
     }
   }
 }
